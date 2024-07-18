@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD7204E62C48D45800ECED99 /* Globe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7204E52C48D45800ECED99 /* Globe.swift */; };
 		BD7204E82C48D8FA00ECED99 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7204E72C48D8FA00ECED99 /* Calc.swift */; };
+		BD7204EA2C49878200ECED99 /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7204E92C49878200ECED99 /* mainPage.swift */; };
 		BDB806522C497E850019839E /* Sustainability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB806512C497E850019839E /* Sustainability.swift */; };
 		BDC3A32A2C48D37300AC10C7 /* Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3A3292C48D37300AC10C7 /* Final_ProjectApp.swift */; };
 		BDC3A32C2C48D37300AC10C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC3A32B2C48D37300AC10C7 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		BD7204E52C48D45800ECED99 /* Globe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globe.swift; sourceTree = "<group>"; };
 		BD7204E72C48D8FA00ECED99 /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
+		BD7204E92C49878200ECED99 /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		BDB806512C497E850019839E /* Sustainability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainability.swift; sourceTree = "<group>"; };
 		BDC3A3262C48D37300AC10C7 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC3A3292C48D37300AC10C7 /* Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectApp.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				BDC3A3292C48D37300AC10C7 /* Final_ProjectApp.swift */,
 				BDC3A32B2C48D37300AC10C7 /* ContentView.swift */,
+				BD7204E92C49878200ECED99 /* mainPage.swift */,
 				BD7204E52C48D45800ECED99 /* Globe.swift */,
 				BD7204E72C48D8FA00ECED99 /* Calc.swift */,
 				BDB806512C497E850019839E /* Sustainability.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7204E82C48D8FA00ECED99 /* Calc.swift in Sources */,
+				BD7204EA2C49878200ECED99 /* mainPage.swift in Sources */,
 				BD7204E62C48D45800ECED99 /* Globe.swift in Sources */,
 				BDC3A32C2C48D37300AC10C7 /* ContentView.swift in Sources */,
 				BDC3A32A2C48D37300AC10C7 /* Final_ProjectApp.swift in Sources */,

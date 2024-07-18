@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct Protein: Identifiable {
   let id = UUID()
   var name: String
@@ -24,22 +23,40 @@ struct Calc: View {
     Protein(name: "Vegan Meat (kg)", pricePerKg: 10),
     Protein(name: "Tofu (kg)", pricePerKg: 9),
   ]
-  @State private var quantities: [String: String] = [:] // Changed to store String values
+  @State private var quantities: [String: String] = [:]
   @State private var totalCost: Double = 0.0
+  let backgroundColor = Color(red: 50/255, green: 65/255, blue: 67/255)
+  let textColor = Color(red: 236/255, green: 226/255, blue: 208/255)
   var body: some View {
-    VStack {
-      ForEach($proteins) { $protein in // Keep using $proteins
-        HStack {
-          Text(protein.name)
-          Spacer()
-          TextField("Quantity", text: binding(for: protein.name))
-            .keyboardType(.numberPad)
+    ZStack {
+      backgroundColor.edgesIgnoringSafeArea(.all)
+      VStack {
+        Image("Intro1")
+          .resizable()
+          .aspectRatio(contentMode: .fit)
+          .padding()
+        ForEach($proteins) { $protein in
+          HStack {
+            Text(protein.name)
+              .foregroundColor(textColor)
+            Spacer()
+            TextField("Quantity", text: binding(for: protein.name))
+              .keyboardType(.numberPad)
+              .foregroundColor(Color(red: 236/255, green: 226/255, blue: 208/255))
+          }
         }
+        Button("Calculate Cost") {
+          calculateTotalCost()
+        }
+        .foregroundColor(Color(red: 73/255, green: 95/255, blue: 85/255))
+        .padding()
+        .background(Color(red: 176/255, green: 197/255, blue: 133/255))
+        .cornerRadius(8)
+        Text("Total Cost: $\(totalCost, specifier: "%.2f")")
+          .fontWeight(.bold)
+          .foregroundColor(Color(red: 111/255, green: 159/255, blue: 116/255))
       }
-      Button("Calculate Cost") {
-        calculateTotalCost()
-      }
-      Text("Total Cost: $\(totalCost, specifier: "%.2f")")
+      .padding()
     }
   }
   private func binding(for key: String) -> Binding<String> {
@@ -63,7 +80,14 @@ struct ContentView_Previews: PreviewProvider {
     Calc()
   }
 }
-
 #Preview {
-    Calc()
+  Calc()
 }
+
+
+
+
+
+
+
+
