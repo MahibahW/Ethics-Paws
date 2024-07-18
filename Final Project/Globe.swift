@@ -173,4 +173,6 @@ struct Globe: View {
     }
 }
 
-
+#Preview {
+    Globe()
+}

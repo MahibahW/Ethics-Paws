@@ -17,6 +17,9 @@ struct ContentView: View {
                     NavigationLink(destination: Calc()) {
                         Text("Click Me!!")
                     }
+                    NavigationLink(destination: Sustainability()) {
+                        Text("Click Me!!")
+                    }
                 }
             }
         }
