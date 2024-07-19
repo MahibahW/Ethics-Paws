@@ -48,7 +48,7 @@ struct GlobeView: UIViewRepresentable {
     scene.rootNode.addChildNode(globeNode)
     // Define locations with names
     let locations = [
-      Location(name: "Afghanistan", latitude: 33.9391, longitude: 24.7100),
+      Location(name: "Afghanistan: Across Afghanistan, countless homeless cats and dogs endure daily hardships on the streets, scavenging for food amid the challenges of parasites, disease, and infection. Similarly, donkeys, horses, mules, and other working animals labor tirelessly under harsh conditions until their exhausted bodies give out. Many Afghans regard these animals as cherished family members, emphasizing the deep bond between humans and animals. Despite extensive rescue efforts, both human and animal, numerous lives have been tragically left behind. While some animals are forced into cruel activities like dogfights, songbird fights, and buzkashi, our capacity to save every animal is limited. However, you can still make a significant and lasting difference by supporting organizations such as Nowzad and Kabul Small Animal Rescue. These groups are dedicated to evacuating veterinarians, their families, and as many animals as possible to safety. For those animals unable to be rescued, they ensure a compassionate end through painless euthanasia, sparing them from further suffering ", latitude: 33.9391, longitude: 24.7100),
       Location(name: "Mexico", latitude: 23.6345, longitude: -167.5528),
       Location(name: "China", latitude: 35.8617, longitude: -10.1954),
       Location(name: "Colorado", latitude: 39.5501, longitude: -160.7821),
@@ -124,14 +124,14 @@ struct Globe: View {
           .foregroundColor(.white)
           .opacity(opacity)
           .onAppear {
-            withAnimation(.easeIn(duration: 2)) {
+              withAnimation(.easeIn(duration: 0.5)) {
               opacity = 1.0
             }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-              withAnimation(.easeOut(duration: 2)) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                withAnimation(.easeOut(duration: 1)) {
                 opacity = 0.0
               }
-              DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+              DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 isTextVisible = false // Hide text after fading out
               }
             }
@@ -141,7 +141,6 @@ struct Globe: View {
     }
   }
 }
-
 #Preview {
     Globe()
 }

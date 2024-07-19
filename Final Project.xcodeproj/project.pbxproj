@@ -22,7 +22,7 @@
 		BD7204E72C48D8FA00ECED99 /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
 		BD7204E92C49878200ECED99 /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		BDB806512C497E850019839E /* Sustainability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sustainability.swift; sourceTree = "<group>"; };
-		BDC3A3262C48D37300AC10C7 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDC3A3262C48D37300AC10C7 /* EthicsPaws.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthicsPaws.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC3A3292C48D37300AC10C7 /* Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectApp.swift; sourceTree = "<group>"; };
 		BDC3A32B2C48D37300AC10C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDC3A32D2C48D37500AC10C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		BDC3A3272C48D37300AC10C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDC3A3262C48D37300AC10C7 /* Final Project.app */,
+				BDC3A3262C48D37300AC10C7 /* EthicsPaws.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BDC3A3252C48D37300AC10C7 /* Final Project */ = {
+		BDC3A3252C48D37300AC10C7 /* EthicsPaws */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDC3A3342C48D37500AC10C7 /* Build configuration list for PBXNativeTarget "Final Project" */;
+			buildConfigurationList = BDC3A3342C48D37500AC10C7 /* Build configuration list for PBXNativeTarget "EthicsPaws" */;
 			buildPhases = (
 				BDC3A3222C48D37300AC10C7 /* Sources */,
 				BDC3A3232C48D37300AC10C7 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = "Final Project";
+			name = EthicsPaws;
 			productName = "Final Project";
-			productReference = BDC3A3262C48D37300AC10C7 /* Final Project.app */;
+			productReference = BDC3A3262C48D37300AC10C7 /* EthicsPaws.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDC3A3252C48D37300AC10C7 /* Final Project */,
+				BDC3A3252C48D37300AC10C7 /* EthicsPaws */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDC3A3342C48D37500AC10C7 /* Build configuration list for PBXNativeTarget "Final Project" */ = {
+		BDC3A3342C48D37500AC10C7 /* Build configuration list for PBXNativeTarget "EthicsPaws" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDC3A3352C48D37500AC10C7 /* Debug */,

@@ -13,6 +13,9 @@ struct ContentView: View {
           NavigationLink(destination: mainPage()) {
             Text("Continue →")
               .foregroundColor(Color(red: 73/255, green: 95/255, blue: 85/255))
+              .padding(5)
+              .padding(.horizontal, 30)
+              .font(.system(size: 20))
           }
           .buttonStyle(.borderedProminent)
           .tint(Color(red: 176/255, green: 197/255, blue: 133/255))
