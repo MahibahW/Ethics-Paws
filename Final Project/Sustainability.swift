@@ -1,5 +1,4 @@
 import SwiftUI
-
 struct MeatConsumption: Identifiable {
     let id = UUID()
     var type: String
@@ -35,7 +34,7 @@ struct Sustainability: View {
                         .padding(.horizontal, 4)
                         .background(Color(red: 50/255, green: 65/255, blue: 67/255))
                         .cornerRadius(10)
-                    Text("Click the button to select from various meat types and specify quantities in kilograms. You can add more types using the pick list. Finally, hit 'Calculate' to determine your weekly CO2 emissions from meat consumption.")
+                    Text("Click the button to select from various meat types and specify quantities in kilograms. You can add more types using the pick list. Finally, hit |\"Calculate\" to determine your weekly CO2 emissions from meat consumption.")
                         .italic()
                         .lineSpacing(5)
                         .font(.system(size: 16))

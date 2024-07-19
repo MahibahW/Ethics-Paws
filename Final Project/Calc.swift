@@ -48,7 +48,7 @@ struct Calc: View {
                                 .cornerRadius(10)
                         }
                         
-                        Text("To calculate your weekly protein budget, select the protein options and enter the quantities you plan to consume (e.g., 3). Click calculate to get your total instantly!")
+                        Text("To calculate your weekly protein budget, select the protein options and enter the quantities you plan to consume (e.g., 3). Click |\"Calculate\" to get your total instantly!")
                             .italic()
                             .lineSpacing(5)
                             .font(.system(size: 16))
